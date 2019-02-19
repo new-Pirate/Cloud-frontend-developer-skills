@@ -140,9 +140,11 @@ table {
 
 .container {
     background: #71BFFF;
-    padding: 181px 0;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: "Segoe-UI";
 
     .leftSide {
@@ -221,12 +223,12 @@ table {
 
         .generation {
             width: 500px;
-            height: 144px;
+            height: 160px;
             display: flex;
 
             &-side {
                 width: 240px;
-                height: 144px;
+                height: 100%;
 
                 &-title {
                     font-size: 25px;
@@ -237,9 +239,11 @@ table {
 
                 &-block {
                     background: #fff;
-                    width: 210px;
-                    height: 60px;
-                    padding: 15px;
+                    width: 240px;
+                    height: 90px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
                 }
 
                 &:nth-child(1) {
@@ -247,8 +251,6 @@ table {
                 }
 
                 .bodyBlock {
-                    display: flex;
-                    justify-content: space-between;
                     
                     &-checks {
                         display: none;
@@ -352,8 +354,6 @@ table {
                 }
 
                 .faceBlock {
-                    display: flex;
-                    justify-content: space-between;
                     
                     &-checks {
                         display: none;
@@ -367,6 +367,9 @@ table {
                         cursor: pointer;
                         transition: all .2s ease-in-out;
                         position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         &::before {
                             content: '';
